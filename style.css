@@ -1,0 +1,130 @@
+/* josefin-sans-regular - latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/fonts/josefin-sans-v20-latin-regular.woff2") format("woff2"), url("/fonts/josefin-sans-v20-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+footer {
+  height: 5vh;
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  background-color: #416788ff;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  height: 5vh;
+}
+nav .menu {
+  height: 2em;
+}
+nav a, nav i {
+  padding: 10px;
+  text-decoration: none;
+  color: #d3ffe9ff;
+}
+nav a:hover, nav i:hover {
+  color: white;
+}
+
+.navdrawer {
+  top: 2em;
+  position: absolute;
+  background-color: #416788ff;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  visibility: hidden;
+  align-items: center;
+  width: 100vw;
+}
+
+.show {
+  height: auto;
+  visibility: visible;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+
+aside {
+  flex-grow: 1;
+  background-color: darkorange;
+}
+
+article {
+  display: flex;
+  flex-grow: 5;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: crimson;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.panel {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  width: fit-content;
+  background-color: deepskyblue;
+}
+
+#portrait {
+  width: 50vw;
+  max-width: 300px;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.imagelink {
+  position: relative;
+  width: fit-content;
+}
+
+.text {
+  color: #9bc4bcff;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: none;
+}
+
+.imagelink:hover img {
+  opacity: 50%;
+  z-index: 100;
+}
+
+.imagelink:hover .text {
+  display: block;
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */
