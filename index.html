@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Hello!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Krister Myrman</title>
+<!--    FIXME: Remember to switch to CDN/Online in production-->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://kit.fontawesome.com/7e92285387.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>Welcome!</h1>
-<p>This is my site!</p>
+<!--<header>-->
+<!--    <nav>-->
+<!--        <i class="fas fa-chevron-down menu"></i>-->
+<!--        <div class="navdrawer">-->
+<!--        <a href="#">Home</a>-->
+<!--        <a href="#">About</a>-->
+<!--        <a href="#">Machinations</a>-->
+<!--        <a href="#">Contact</a>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</header>-->
 
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Machinations</a>
+        <a href="#">Contact</a>
+    </nav>
+
+<main>
+    <aside></aside>
+    <article>
+        <p> I was born in 1979 in a tiny village in Dalarna, Sweden. Here I am going to write a lot about my background in computers, and how great a programmer I am since I am totally awesome and the best in the motherfucking world, so there you have it go to hell everybody!
+        </p>   <p>Maybe put some link to my CV and my github and my linkedin and stuffs? Yeah that is probably a good
+        idea!</p>
+
+        <div class="imagelink rounded">
+        <a href="#about"><img id="portrait" class="rounded" src="krister.png">
+        <div class="text">about</div></a>
+    </div> </article>
+    <aside></aside>
+
+</main>
+<footer></footer>
 </body>
+<script>
+    $(document).ready(() => {
+        $("img").hover(() => {
+            console.log("wut");
+        });
+
+        $(".menu").click(() => {
+            $( ".navdrawer" ).toggleClass("show");
+            $( ".menu" ).toggleClass("fa-chevron-down fa-chevron-up");
+            console.log(blala);
+        });
+    });
+
+</script>
 </html>
